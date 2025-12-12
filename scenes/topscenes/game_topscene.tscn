@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://cc05seadx0aus"]
+[gd_scene load_steps=2 format=3 uid="uid://cc05seadx0aus"]
+
+[ext_resource type="Texture2D" uid="uid://dinmmoltbvhvk" path="res://assets/art/bun_ball.png" id="1_wt4gs"]
 
 [node name="GameTopscene" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(128, 112)
+texture = ExtResource("1_wt4gs")

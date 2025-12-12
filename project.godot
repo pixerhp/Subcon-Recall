@@ -15,7 +15,18 @@ run/main_scene="uid://cc05seadx0aus"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=256
+window/size/viewport_height=224
+window/size/window_width_override=768
+window/size/window_height_override=672
+window/stretch/mode="viewport"
+window/handheld/orientation=6
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+2d/snap/snap_2d_transforms_to_pixel=true
