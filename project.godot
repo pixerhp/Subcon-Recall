@@ -19,10 +19,14 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=256
 window/size/viewport_height=224
+window/size/mode=1
 window/size/window_width_override=768
 window/size/window_height_override=672
 window/stretch/mode="viewport"
 window/handheld/orientation=6
+window/snap/snap_2d_transforms_to_pixel=true
+window/snap_controls_to_pixels=true
+window/canvas_textures/default_texture_filter=0
 
 [rendering]
 
