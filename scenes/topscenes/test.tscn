@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://5aiufuvts7j4"]
+
+[ext_resource type="Texture2D" uid="uid://cn3qxwptft4oe" path="res://assets/art/debug_texture.png" id="1_r6whs"]
+[ext_resource type="Shader" uid="uid://bgb25adc0y1dg" path="res://assets/shaders/subspace.gdshader" id="2_v8deo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1spmm"]
+shader = ExtResource("2_v8deo")
+shader_parameter/toggle = false
+
+[node name="Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_r6whs")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer2"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_r6whs")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_1spmm")
+custom_minimum_size = Vector2(128, 224)
+
+[node name="SceneCam" type="Camera2D" parent="."]
+visible = false
+position = Vector2(128, 112)
