@@ -2,7 +2,7 @@ extends Node
 
 func _process(_delta):
 	# Process inputs that should work regardless of game state:
-	if Input.is_action_just_pressed("quit"):
+	if Input.is_action_just_pressed("fast_quit"):
 		get_tree().quit()
 	if Input.is_action_just_pressed("fullscreen_toggle"):
 		if not DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:

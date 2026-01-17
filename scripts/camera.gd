@@ -1,8 +1,9 @@
 extends Camera2D
 
-var move_normalized: Vector2 = Vector2()
-func _process(_delta):
-	move_normalized = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	move_normalized = move_normalized.normalized()
-	
-	self.position += move_normalized
+#var player_char_node_ref: CharacterBody2D
+#
+#func _ready():
+	#player_char_node_ref = %PlayerChar
+#
+#func _process(_delta):
+	#position = player_char_node_ref.position
